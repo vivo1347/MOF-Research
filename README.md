@@ -1,0 +1,9 @@
+                                                                     Abstract
+
+
+
+
+
+
+
+Reducing global carbon emissions is crucial for addressing climate change, and Metal- Organic Frameworks (MOFs) have emerged as a promising material for carbon capture. This study investigates the impact of using faulty MOF structures from the CoRE-MOF database on the accuracy of machine learning (ML) models in predicting CO2 uptake, by comparing them to structurally validated MOFs from the ARC-MOF database. A total of 4,136 MOFs from the CoRE- MOF database and 3,612 MOFs from the ARC-MOF database was used, with CO2 uptake at 298 K and 1bar (15% CO2) as the target variable. Using a Gradient Boosted Decision Tree Regression (GBDT) model, initial tests with the Good dataset (ARC-MOF) yielded an R2 value of 0.55 without RDF features and 0.93 with them included. The exclusion of geometric descriptors resulted in a decrease to 0.55, confirming the importance of both descriptor types. A t-distributed stochastic neighbor embedding (t-SNE) analysis was performed, revealing that while the descriptor distributions of both datasets were similar, significant predicted uptakes differences remained. When training with the Good dataset and testing with the Bad dataset, the R2 was lower compared to when both training and testing were done with the Good dataset. A mixed training set, composed of 50% Good and 50% Bad, yielded R2 values between the two extremes when tested on the Good dataset. The results were consistent across different ML models, including a Multi-Layer Perceptron Regressor (MLPR) and a FeedForward Neural Network (FFNN), showing that the observed differences were not model-specific. The study highlights the importance of using structurally validated MOF datasets for reliable ML model predictions and demonstrates the detrimental effect of faulty MOF structures on model performance.
